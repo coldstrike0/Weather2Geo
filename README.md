@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```bash
-python main.py run --time "2025-05-22 14:00" --condition "Mostly cloudy" --temp 18 --tolerance 1.0
+python main.py --time "2025-05-22 14:00" --condition "Mostly cloudy" --temp 18 --tolerance 1.0
 ```
 
 ---

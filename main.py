@@ -6,7 +6,6 @@ import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from math import radians, sin, cos, sqrt, atan2
 import typer
-from rich import print
 from rich.console import Console
 from rich.panel import Panel
 
@@ -82,7 +81,7 @@ def run(
     condition: str = typer.Option(..., help="Desired weather condition (e.g. 'Mostly cloudy')"),
     temp: float = typer.Option(..., help="Target temperature in Celsius"),
     tolerance: float = typer.Option(1.0, help="Temperature tolerance (default: 1.0)"),
-    cluster_distance: int = typer.Option(15, help="Clustering distance in KM (default: 25)"),
+    cluster_distance: int = typer.Option(15, help="Clustering distance in KM (default: 15)"),
     cities_file: str = typer.Option("cities15000.txt", help="Path to cities data file")
 ):
     input_dt = datetime.strptime(time, "%Y-%m-%d %H:%M")
@@ -148,5 +147,4 @@ def run(
                 f"[dim]-[/dim] [bold]{loc['country']} {loc['location']}[/bold] — [yellow]{loc['temp']}°C[/yellow], [green]{loc['cap']}[/green], [blue]lat: {loc['latitude']}, lon: {loc['longitude']}[/blue]")
 
 if __name__ == "__main__":
-    console.print("[bold blue]OSINT-style Weather Matcher[/bold blue]")
     app()
