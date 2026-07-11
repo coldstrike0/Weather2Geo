@@ -178,5 +178,3 @@ python weather2geo.py --hour 13 --condition "Partly cloudy" --temp 24 --toleranc
 - Original project: [elliott-diy/Weather2Geo](https://github.com/elliott-diy/Weather2Geo)
 - Weather data: [Open-Meteo](https://open-meteo.com/) — free, no API key
 - City data: [GeoNames](https://www.geonames.org/) — CC BY 4.0
-
-
