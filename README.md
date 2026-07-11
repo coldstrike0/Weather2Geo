@@ -179,7 +179,4 @@ python weather2geo.py --hour 13 --condition "Partly cloudy" --temp 24 --toleranc
 - Weather data: [Open-Meteo](https://open-meteo.com/) — free, no API key
 - City data: [GeoNames](https://www.geonames.org/) — CC BY 4.0
 
-## Disclaimer
-
-This tool is for ethical, educational OSINT use only. Don’t be a creep. Respect privacy and legal boundaries.
 
