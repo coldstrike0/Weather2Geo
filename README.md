@@ -72,8 +72,8 @@ Most weather apps (Windows, iPhone, Google, AccuWeather) use plain-English label
 ## Installation
 
 ```bash
-git clone https://github.com/coldstrike0/weather2geo
-cd weather2geo
+git clone https://github.com/coldstrike0/Weather2Geo
+cd Weather2Geo
 python -m venv venv && source venv/bin/activate 
 pip install -r requirements.txt
 ```
